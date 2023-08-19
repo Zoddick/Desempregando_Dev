@@ -1,0 +1,17 @@
+.card.card-position
+  .card-body
+    .container.conteiner-card
+      .row
+        .col-2
+          = image_tag position.company.logo, alt: "Logo marca da empresa #{position.company.name}", class: 'card-img-top'
+        .col-10
+          %h4= position.name
+          %h5= "#{I18n.t('activerecord.attributes.position.careers')[position.career.to_sym]} - #{position.city} - #{I18n.t('activerecord.attributes.position.contracts')[position.contract.to_sym]}"
+          %p= position.summary
+          .row
+            .col-sm.mt-3
+              = link_to 'Ver mais', public_position_path(position.slug), class: 'btn btn-danger'
+              - if user_signed_in?
+                = link_to 'Candidatar-se', public_position_path(position.slug), {:remote => true, "data-target" => "modal", "data-backdrop" => "modal", 'data-backdrop' => 'static', 'data-keyboard' => 'false', class: 'btn btn-success'}
+            .col-sm.text-right.mt-3.group-social-network
+              = render partial: 'shared/social_network', locals: {position: position}

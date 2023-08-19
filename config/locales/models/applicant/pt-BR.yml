@@ -1,0 +1,9 @@
+pt-BR:
+  activerecord:
+    models:
+      applicant:
+    attributes:
+      applicant:
+        name: Nome do candidato
+        email: E-mail do Candidato
+        phone: Telefone do candidato

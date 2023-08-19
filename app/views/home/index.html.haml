@@ -1,0 +1,25 @@
+%header.text-center
+%h1 Desempregando 
+%p
+
+= search_form_for @q, url: root_path do |f|
+  .form-group
+    .row
+      .col-sm
+        = f.label :name_cont
+        = f.search_field :name_cont, class: 'form-control'
+      .col-sm
+        = f.label :contract_eq
+        = f.select :contract_eq, options_from_collection_for_select(@contracts, :second, :first, @q.contract_eq), {include_blank: true}, {class: 'form-control'}
+      .col-sm
+        = f.label :state_eq
+        = f.select :state_eq, options_from_collection_for_select(Brazil.states, :first, :second, @q.state_eq), {include_blank: true}, {class: 'form-control'}
+      .col-sm
+        %button.btn.btn-danger{type: 'submit', style: 'margin-top: 31px;'} Pesquisar
+  
+- @positions.each do |position|
+  = render position
+
+%p.d-block.text-center.mt-3
+  -# .text-center= paginate @positions, theme: 'twitter-bootstrap'
+  .text-center= paginate @positions, them: 'twitter-bootstrap'

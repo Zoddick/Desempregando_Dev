@@ -1,0 +1,23 @@
+%h2 Minhas vagas
+
+%table.table
+  %thead.thead-dark
+    %tr
+      %th{:scope => "col"} Título
+      %th{:scope => "col"} Carreira
+      %th{:scope => "col"} Local
+      %th{:scope => "col"} Tipo de contrato
+      %th{:scope => "col"} Candidaturas
+      %th{:scope => "col"} Ações
+  %tbody
+    - @positions.each do |position|
+      %tr
+        %th{:scope => "row"}= position.name
+        %td= career_name(position.career)
+        %td= modality(position) # aplicar helper se não for remoto devemos mostra os estado e cidade da vaga
+        %td= contract_name(position.contract)
+        %td 
+          - if position.applicants.size > 0
+            = link_to "Ver aplicações (#{position.applicants.count})", position_applicants_path(position), class: 'btn btn-warning btn-sm'
+        %td
+          = link_to 'Editar', edit_position_path(position), class: 'btn btn-outline-info'

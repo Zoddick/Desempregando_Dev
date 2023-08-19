@@ -1,0 +1,7 @@
+pt-BR:
+  activerecord:
+    atttributes:
+      applicant:
+        name: Nome
+        email: E-mail
+        phone: Telefone

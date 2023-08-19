@@ -1,0 +1,21 @@
+%link#bootstrap-css{href: "//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css", rel: "stylesheet"}/
+%script{src: "//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"}
+%script{src: "//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"}
+/ ---- Include the above in your HEAD tag --------
+.wrapper.fadeInDown
+  #formContent
+    .fadeIn.first
+    %form
+    %h2 Log in
+    = simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+      .form-inputs.fadeIn.second
+        = f.input :email, required: false, label: false, autofocus: true,input_html: { autocomplete: "email" }, placeholder: 'Digite o E-mail'
+      .form-inputs.fadeIn.third
+        = f.input :password, required: false, label: false, input_html: { autocomplete: "current-password" }, placeholder: 'Digite a Senha'
+        = f.input :remember_me, as: :boolean if devise_mapping.rememberable?
+      .form-actions.fadeIn.fourth
+        = f.button :submit, "Logar", class: 'btn btn-primary'
+    / Remind Passowrd
+    #formFooter
+      = render "devise/shared/links"
+          

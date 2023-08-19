@@ -1,0 +1,18 @@
+- if flash[:success].present?
+  - @icon = 'success'
+  - @title = 'Sucesso'
+  - @message =  flash[:success]
+- else
+  - @icon = 'error'
+  - @title = 'Error'
+  - @message =  flash[:error]
+
+:javascript 
+  Swal.fire({
+    title: <%= @icon%>,
+    text: <%= @title%>,
+    icon: <%= @message%>,
+    confirmButtonText: 'OK'
+  })
+
+- end

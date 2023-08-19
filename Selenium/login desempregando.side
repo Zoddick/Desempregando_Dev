@@ -1,0 +1,178 @@
+{
+  "id": "3ccfc7bf-59ac-4525-b984-96b30b9e9437",
+  "version": "2.0",
+  "name": "login desempregando",
+  "url": "http://localhost:3000",
+  "tests": [{
+    "id": "592d7ba0-d464-490d-a1f9-ce35ec007df7",
+    "name": "teste_do_login",
+    "commands": [{
+      "id": "2c6df86c-3583-47eb-9eff-3164da9bba0c",
+      "comment": "",
+      "command": "open",
+      "target": "/users/sign_in",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "78c81a06-37ab-4ab2-b458-72f2a454b7af",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0b71a845-7c3b-4ab1-bb17-cbeb4d513f04",
+      "comment": "",
+      "command": "click",
+      "target": "id=user_email",
+      "targets": [
+        ["id=user_email", "id"],
+        ["name=user[email]", "name"],
+        ["css=#user_email", "css:finder"],
+        ["xpath=//input[@id='user_email']", "xpath:attributes"],
+        ["xpath=//form[@id='new_user']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3ddeb79-3a1c-4bf5-a219-787e042982be",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_email",
+      "targets": [
+        ["id=user_email", "id"],
+        ["name=user[email]", "name"],
+        ["css=#user_email", "css:finder"],
+        ["xpath=//input[@id='user_email']", "xpath:attributes"],
+        ["xpath=//form[@id='new_user']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "user@gmail.com"
+    }, {
+      "id": "07309b8b-f815-4798-9cff-7125dd15340f",
+      "comment": "",
+      "command": "click",
+      "target": "id=user_password",
+      "targets": [
+        ["id=user_password", "id"],
+        ["name=user[password]", "name"],
+        ["css=#user_password", "css:finder"],
+        ["xpath=//input[@id='user_password']", "xpath:attributes"],
+        ["xpath=//form[@id='new_user']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2a7add1-c3bb-4590-a8a6-78ac3ffc62a9",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_password",
+      "targets": [
+        ["id=user_password", "id"],
+        ["name=user[password]", "name"],
+        ["css=#user_password", "css:finder"],
+        ["xpath=//input[@id='user_password']", "xpath:attributes"],
+        ["xpath=//form[@id='new_user']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "ba136daf-0a86-48b8-b176-9973eeab4cc4",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//form[@id='new_user']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8dd2ff30-9ea9-41f9-a79d-a6c018b9814d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Minha Empresa",
+      "targets": [
+        ["linkText=Minha Empresa", "linkText"],
+        ["css=.me-auto > .nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Minha Empresa')]", "xpath:link"],
+        ["xpath=//div[@id='navbarsExampleDefault']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/companies/1/edit')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Minha Empresa')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "00a351d5-239f-44ca-9fa7-4f3f393a70b2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Minhas vagas",
+      "targets": [
+        ["linkText=Minhas vagas", "linkText"],
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Minhas vagas')]", "xpath:link"],
+        ["xpath=//div[@id='navbarsExampleDefault']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost:3000/positions']", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Minhas vagas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "df231c3d-d63a-4e2f-a4d2-06d107455ecf",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Publicar Vaga",
+      "targets": [
+        ["linkText=Publicar Vaga", "linkText"],
+        ["css=.nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Publicar Vaga')]", "xpath:link"],
+        ["xpath=//div[@id='navbarsExampleDefault']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/positions/new')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Publicar Vaga')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0b5aa673-edba-404f-afb8-ed8b07ad4725",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Início",
+      "targets": [
+        ["linkText=Início", "linkText"],
+        ["css=.nav-item > .active", "css:finder"],
+        ["xpath=//a[contains(text(),'Início')]", "xpath:link"],
+        ["xpath=//div[@id='navbarsExampleDefault']/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/')])[2]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Início')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "127eb36a-8677-4378-a74e-8ad411585d98",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Ver mais",
+      "targets": [
+        ["linkText=Ver mais", "linkText"],
+        ["css=.mt-3 > .btn-danger", "css:finder"],
+        ["xpath=//a[contains(text(),'Ver mais')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/vaga/fase-boa-atacante-da-fiel')]", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Ver mais')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b7683307-6f1e-46f3-a8ef-90a24dc56da8",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["592d7ba0-d464-490d-a1f9-ce35ec007df7"]
+  }],
+  "urls": ["http://localhost:3000/"],
+  "plugins": []
+}

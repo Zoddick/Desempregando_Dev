@@ -1,0 +1,225 @@
+{
+  "id": "c14145be-2852-4335-843e-25f2a8446e37",
+  "version": "2.0",
+  "name": "CadastrarVaga",
+  "url": "http://localhost:3000",
+  "tests": [{
+    "id": "61029fdd-45bd-41dc-bc74-d7bdd6c5aed4",
+    "name": "CriarVagas",
+    "commands": [{
+      "id": "fcd13290-1d9a-4891-af58-a52dae9dca0e",
+      "comment": "",
+      "command": "open",
+      "target": "/positions/new",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "95d2df7f-98a7-424e-8595-edc71ad39fa9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2c023637-7044-4265-84f0-cb445bf4c328",
+      "comment": "",
+      "command": "click",
+      "target": "id=position_name",
+      "targets": [
+        ["id=position_name", "id"],
+        ["name=position[name]", "name"],
+        ["css=#position_name", "css:finder"],
+        ["xpath=//input[@id='position_name']", "xpath:attributes"],
+        ["xpath=//form[@id='new_position']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3c4240a-0291-4415-b30d-0fa3e33aad79",
+      "comment": "",
+      "command": "type",
+      "target": "id=position_name",
+      "targets": [
+        ["id=position_name", "id"],
+        ["name=position[name]", "name"],
+        ["css=#position_name", "css:finder"],
+        ["xpath=//input[@id='position_name']", "xpath:attributes"],
+        ["xpath=//form[@id='new_position']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Desenvolvedor web"
+    }, {
+      "id": "527b90c5-9b8d-4ec9-b3ca-e4f31335b661",
+      "comment": "",
+      "command": "click",
+      "target": "id=position_career",
+      "targets": [
+        ["id=position_career", "id"],
+        ["name=position[career]", "name"],
+        ["css=#position_career", "css:finder"],
+        ["xpath=//select[@id='position_career']", "xpath:attributes"],
+        ["xpath=//form[@id='new_position']/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'Desenvolvedor\nBusiness Intelligence\nTecnologia da Informação\nDesign\nProduto\nTecnologia\nOutra')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd996a85-1390-4d06-b563-a13b09fbc7fe",
+      "comment": "",
+      "command": "click",
+      "target": "id=position_contract",
+      "targets": [
+        ["id=position_contract", "id"],
+        ["name=position[contract]", "name"],
+        ["css=#position_contract", "css:finder"],
+        ["xpath=//select[@id='position_contract']", "xpath:attributes"],
+        ["xpath=//form[@id='new_position']/div[3]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/select", "xpath:position"],
+        ["xpath=//select[contains(.,'CLT\nPJ\nA combinar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef5a27ad-b997-403d-a69a-bcb60c0052f6",
+      "comment": "",
+      "command": "click",
+      "target": "id=position_remote",
+      "targets": [
+        ["id=position_remote", "id"],
+        ["css=#position_remote", "css:finder"],
+        ["xpath=//input[@id='position_remote']", "xpath:attributes"],
+        ["xpath=//form[@id='new_position']/fieldset/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc0b5cd4-64b3-40cf-a4b8-4f1253fa6150",
+      "comment": "",
+      "command": "click",
+      "target": "id=position_publish",
+      "targets": [
+        ["id=position_publish", "id"],
+        ["css=#position_publish", "css:finder"],
+        ["xpath=//input[@id='position_publish']", "xpath:attributes"],
+        ["xpath=//form[@id='new_position']/fieldset[2]/div/input[2]", "xpath:idRelative"],
+        ["xpath=//fieldset[2]/div/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7be412bc-73d9-430e-9db5-a60554407b40",
+      "comment": "",
+      "command": "click",
+      "target": "id=position_city",
+      "targets": [
+        ["id=position_city", "id"],
+        ["name=position[city]", "name"],
+        ["css=#position_city", "css:finder"],
+        ["xpath=//input[@id='position_city']", "xpath:attributes"],
+        ["xpath=//form[@id='new_position']/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d6bdace-6826-4569-a26e-841fddc92741",
+      "comment": "",
+      "command": "type",
+      "target": "id=position_city",
+      "targets": [
+        ["id=position_city", "id"],
+        ["name=position[city]", "name"],
+        ["css=#position_city", "css:finder"],
+        ["xpath=//input[@id='position_city']", "xpath:attributes"],
+        ["xpath=//form[@id='new_position']/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "Palmas"
+    }, {
+      "id": "1f7268d6-f919-4586-a249-314c4471a6d9",
+      "comment": "",
+      "command": "click",
+      "target": "id=position_state",
+      "targets": [
+        ["id=position_state", "id"],
+        ["name=position[state]", "name"],
+        ["css=#position_state", "css:finder"],
+        ["xpath=//select[@id='position_state']", "xpath:attributes"],
+        ["xpath=//form[@id='new_position']/div[5]/select", "xpath:idRelative"],
+        ["xpath=//div[5]/select", "xpath:position"],
+        ["xpath=//select[contains(.,'Acre\nAlagoas\nAmapá\nAmazonas\nBahia\nCeará\nDistrito Federal\nEspírito Santo\nGoiás\nMaranhão\nMato Grosso\nMato Grosso do Sul\nMinas Gerais\nPará\nParaíba\nParaná\nPernambuco\nPiauí\nRio de Janeiro\nRio Grande do Norte\nRio Grande do Sul\nRondônia\nRoraima\nSanta Catarina\nSão Paulo\nSergipe\nTocantins')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "512c5408-5bfa-4173-b325-ba57e5a40ae4",
+      "comment": "",
+      "command": "click",
+      "target": "id=position_state",
+      "targets": [
+        ["id=position_state", "id"],
+        ["name=position[state]", "name"],
+        ["css=#position_state", "css:finder"],
+        ["xpath=//select[@id='position_state']", "xpath:attributes"],
+        ["xpath=//form[@id='new_position']/div[5]/select", "xpath:idRelative"],
+        ["xpath=//div[5]/select", "xpath:position"],
+        ["xpath=//select[contains(.,'Acre\nAlagoas\nAmapá\nAmazonas\nBahia\nCeará\nDistrito Federal\nEspírito Santo\nGoiás\nMaranhão\nMato Grosso\nMato Grosso do Sul\nMinas Gerais\nPará\nParaíba\nParaná\nPernambuco\nPiauí\nRio de Janeiro\nRio Grande do Norte\nRio Grande do Sul\nRondônia\nRoraima\nSanta Catarina\nSão Paulo\nSergipe\nTocantins')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "41012b8b-b336-4453-8941-51cd9e243454",
+      "comment": "",
+      "command": "select",
+      "target": "id=position_state",
+      "targets": [],
+      "value": "label=Tocantins"
+    }, {
+      "id": "a57ba150-c3c1-4dea-b13c-ac2ad1e11e5a",
+      "comment": "",
+      "command": "click",
+      "target": "id=position_summary",
+      "targets": [
+        ["id=position_summary", "id"],
+        ["name=position[summary]", "name"],
+        ["css=#position_summary", "css:finder"],
+        ["xpath=//textarea[@id='position_summary']", "xpath:attributes"],
+        ["xpath=//form[@id='new_position']/div[6]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6668d994-c0be-4317-915d-cbd5fec53d5c",
+      "comment": "",
+      "command": "type",
+      "target": "id=position_summary",
+      "targets": [
+        ["id=position_summary", "id"],
+        ["name=position[summary]", "name"],
+        ["css=#position_summary", "css:finder"],
+        ["xpath=//textarea[@id='position_summary']", "xpath:attributes"],
+        ["xpath=//form[@id='new_position']/div[6]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Auxiliar"
+    }, {
+      "id": "5b30686b-34a6-4b7a-9fe1-9598b9e427b9",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//form[@id='new_position']/input[2]", "xpath:idRelative"],
+        ["xpath=//form/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "945c3f8e-162a-4803-9451-ca2735548974",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["61029fdd-45bd-41dc-bc74-d7bdd6c5aed4"]
+  }],
+  "urls": ["http://localhost:3000/"],
+  "plugins": []
+}
